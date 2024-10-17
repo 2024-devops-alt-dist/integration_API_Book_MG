@@ -1,0 +1,223 @@
+:root {
+    /* Color */
+    --color-dark-purple: #291755;
+    --color-purple: #653FC0;
+    --color-light-purple: #8E6BE1;
+    --color-yellow: #FFC201;
+    --color-blue: #2799E5;
+    --color-light-green: #A5B525;
+    --color-pink: #C9225B;
+    --color-white: #FFFFFF;
+    /* Font-size */
+    --font-size-xxxs: 13px;
+    --font-size-xxs: 15px;
+    --font-size-xs: 16px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+    --font-size-l: 28px;
+    --font-size-xl: 30px;
+    --font-size-xxl: 40px;
+    --font-size-xxxl:4.167vw;  /* 64px */
+    /* Margin */
+    --margin-xs: 5px;
+    --margin-s: 10px;
+    --margin-m: 15px;
+    --margin-l: 25px;
+    --margin-xl: 35px;
+    --margin-xxl: 60px;
+    --margin-xxxl: 150px;
+    /* Padding */
+    --padding-s: 12px;
+    --padding-m: 25px;
+}
+
+body {
+    margin : 0;
+}
+
+/* Typographie */
+h1, h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark-purple);
+}
+
+h1 {
+    font-weight: bolder; 
+    font-size: var(--font-size-xxxl);
+}
+
+h2 {
+    font-weight: bold; 
+    font-size: var(--font-size-xxl);
+}
+
+h3 {
+    font-size: var(--font-size-m);
+}
+
+p {
+    font-size: var(--font-size-s);
+}
+
+p.title-upper {
+    font-size: var(--font-size-xxl);
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(24, 12, 54, 0.17);
+}
+
+/* Boutons */
+.btn-add-list, .btn-book {
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    padding: var(--padding-s) var(--padding-m);
+    font-size: var(--font-size-xs);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-list {
+    background: linear-gradient(45deg, var(--color-light-purple), #4D2B9F);
+}
+
+.btn-add-list:hover {
+    background: linear-gradient(45deg, var(--color-light-purple), #341D52); /
+}
+
+.btn-book {
+    background: var(--color-yellow);
+}
+
+.btn-book:hover {
+    background: #CF9E00;
+}
+
+/* Blocs - Propriété */
+.icon-size {
+    width: 30px;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw 10vw;
+    padding-bottom: 75px;
+    position: relative; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+/* Navbar PC */
+.bg-white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 15px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-dark-purple);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon-profil-nav {
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Navbar Tablette */
+.menu-burger {
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer;
+}
+
+.menu-container {
+    display: none;
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Navbar Mobile */
+.navmobile {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    padding: 25px 0;
+    left: 0;    
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;  
+}
+
+
+/* Responsice Design */
+@media (max-width: 772px) {
+    /* Navbar Tablette */
+    .menu-burger {
+        display: block; 
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menuPC {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .rm-mobile {
+        display: none; 
+    }
+
+    /* Navbar Mobile */
+    .navmobile {
+        display: block;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
