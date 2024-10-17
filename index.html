@@ -5,52 +5,55 @@
     <meta name="viewport" content="width=device-width">
     <title>BiblioManiac - Accueil</title>
     
-    <link href="assets/styles.css" rel="stylesheet"/>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="assets/css/index.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 
 <body>
-    <nav class="bg-white rm-mobile">
-        <img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac" />
-        
-        <!-- Menu Burger -->
-        <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
-            &#9776;
-        </div>
-
-        <div class="menu menuPC">
-            <p><a href="accueil.html">Accueil</a></p>
-            <p><a href="#">Catégories</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
-        <div class="right-section menuPC" >
-            <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
-            <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
-        </div>
-    </nav>
+    <header>
+        <nav class="bg-white rm-mobile">
+            <img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac" />
+            
+            <!-- Menu Burger -->
+            <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
+                &#9776;
+            </div>
     
-    <!-- Conteneur du menu burger -->
-    <div class="menu-container" id="menuContainer">
-        <div class="menu" id="navMenu">
-            <p><a href="accueil.html">Accueil</a></p>
-            <p><a href="#">Catégories</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
+            <div class="menu menuPC">
+                <p><a href="accueil.html">Accueil</a></p>
+                <p><a href="#">Catégories</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div class="right-section menuPC" >
+                <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
+                <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
+            </div>
+        </nav>
         
-        <div class="right-section" id="rightSection">
-            <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
-            <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
+        <!-- Conteneur du menu burger -->
+        <div class="menu-container" id="menuContainer">
+            <div class="menu" id="navMenu">
+                <p><a href="accueil.html">Accueil</a></p>
+                <p><a href="#">Catégories</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            
+            <div class="right-section" id="rightSection">
+                <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
+                <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
+            </div>
         </div>
-    </div>
-
-    <nav class="navmobile">
-        <div class="icon-container">
-            <img class="icon-size" src="assets/icons/utils/icon-home-actif.svg" alt="Navbar - Accueil" />
-            <img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche" />
-            <img class="icon-size" src="assets/icons/utils/icon-cart.svg" alt="Navbar - Votre panier" />
-            <img class="icon-size" src="assets/icons/utils/icon-profil.svg" alt="Navbar - Votre profil" />
-        </div>
-    </nav>
+    
+        <nav class="navmobile">
+            <div class="icon-container">
+                <img class="icon-size" src="assets/icons/utils/icon-home-actif.svg" alt="Navbar - Accueil" />
+                <img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche" />
+                <img class="icon-size" src="assets/icons/utils/icon-cart-inactif.svg" alt="Navbar - Votre panier" />
+                <img class="icon-size" src="assets/icons/utils/icon-profil-inactif.svg" alt="Navbar - Votre profil" />
+            </div>
+        </nav>
+    </header>
+    
     
     <section class="main-container">
         <div>
@@ -65,6 +68,46 @@
         <p>Paragraphe : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum libero at tristique varius. Curabitur tellus mauris, aliquam in augue ut, ullamcorper scelerisque elit. Sed ac tincidunt leo. Mauris nec tincidunt urna. Nam enim nunc, egestas at facilisis eget, mollis a orci. Ut venenatis ex dui, id hendrerit felis eleifend nec.</p>
     </section>
     
+
+    <footer >
+        <div class="bg-white-footer">
+            <img class="logo-footer" src="assets/logo_vertical.png" alt="logo BiblioManiac"/>
+            <div>
+                <h3>Menu :</h3>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Catégories</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Services :</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>CGU</li>
+                    <li>Mentions Légales</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="social-media">
+                    <h3>Suivez-nous :</h3>
+                    <img class="icon-rs" src="assets/icons/utils/icon-fb.svg" alt="logo Facebook"/>
+                    <img class="icon-rs" src="assets/icons/utils/icon-insta.svg" alt="logo Instagram"/>
+                </div>
+                <div>
+                    <h3>Newsletter :</h3>
+                    <div class="">
+                        <input id="newsletter" type="text" class="form-control form-nl" placeholder="Adresse email">
+                        <button class="btn-nl" id="" type="button">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white-footer-bis">
+            <p>2024 © Bibliothèque de Lyon - Copyright</p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
