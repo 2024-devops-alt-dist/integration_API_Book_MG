@@ -8,15 +8,16 @@
     }
 
     .item {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
-    .bloc-slide, .bg-about, .title-destock {
+    .bloc-slide, .bg-about, .title-destock, .hide-mob {
         display: none;
     }
 
-    .title-mobile {
+    .bloc-mobile-cat {
         display: block;
+        margin-bottom: 30px;
     }
 
     .heading-mobile {
@@ -28,9 +29,8 @@
     }
 
     .heading-mobile h1 {
-        margin-left: 15px;
+        margin-left: var(--margin-m);
         opacity: 50%;
-        /* font-size: 16px; */
     }
 
     .logo-head-mobile {
@@ -43,11 +43,11 @@
         border: 1px solid rgba(255, 0, 0, 0);
     }
 
-    .title-mobile h2 {
+    .bloc-mobile-cat h2 {
         font-size: 35px;
     }
-    .title-mobile p {
-        font-size: 15px;
+    .bloc-mobile-cat p {
+        font-size: var(--font-size-xxs);
         text-decoration: underline;
     }
 
@@ -61,11 +61,50 @@
         background-color: rgba(102, 63, 192, 0.6);
         border: 1px solid rgba(255, 0, 0, 0);
     }
+
+    /* bloc catégorie */
+    .cat-mobile {
+        margin-top: var(--margin-l);
+    }
+
+    .txt-deco-none {
+        text-decoration: none !important;
+    }
+
+    .square-block {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 15px 30px;
+    }
+
+    .square-block img {
+        width: 30px;
+        height: auto;
+    }
+
+    .cat-slider {
+        gap: 15px;
+        padding: 0px 0 30px 30px;
+    }
+
+    .bg-wave {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 685px) {
     .cust-justi .btn-book {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 40vw;
+    }
+
+    .item p {
+        font-size: 3vw;
     }
 }
 
@@ -75,12 +114,27 @@
     }
 }
 
-@media (max-width: 768px) {
-    .item {
-        width: 40vw; /* Ajuster la largeur des items pour les écrans moyens */
+@media (max-width: 1024px) {
+    .reverse-column {
+        flex-direction: column-reverse; 
     }
 
-    .item p {
-        font-size: 3vw; /* Ajuster la taille du texte pour les écrans moyens */
+    .cust-title-cat {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hide-mob {
+        margin-bottom: 20px; 
+    }
+
+    .title-destock {
+        margin-bottom: 45px;
+    }
+
+    .btn-category {
+        margin-top: var(--margin-s);
     }
 }
+
+
