@@ -1,0 +1,49 @@
+@import url("./styles.css");
+@import url("./index.css");
+
+/* Responsif HomePage*/
+@media (max-width: 500px) {
+    .bloc-slide {
+        display: none;
+    }
+
+    .bg-about {
+        display: none;
+    }
+
+    .heading-mobile {
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        padding: 20px 25px;
+    }
+
+    .heading-mobile h1 {
+        margin-left: 15px;
+        opacity: 50%;
+        /* font-size: 16px; */
+    }
+
+    .logo-head-mobile {
+        width: 50px;
+        height: auto;
+    }
+
+    .bg-news {
+        background-image: none;
+        border: 1px solid rgba(255, 0, 0, 0);
+    }
+}
+
+@media (max-width: 685px) {
+    .cust-justi .btn-book {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1356px) {
+    .line {
+        display: none;
+    }
+}

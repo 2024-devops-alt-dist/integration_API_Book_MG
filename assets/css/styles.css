@@ -130,6 +130,14 @@ p.title-upper {
     gap: 13px;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
 /* Navbar PC */
 .bg-white {
     display: flex;
