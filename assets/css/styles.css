@@ -73,6 +73,10 @@ p.title-upper {
     color: rgba(24, 12, 54, 0.17);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Boutons */
 .btn-add-list, .btn-book, .btn-nl {
     border: none;
@@ -231,6 +235,7 @@ p.title-upper {
 
 .icon-rs {
     padding-left: var(--padding-xs);
+    margin-top: -9px;
 }
 
 .form-nl {
