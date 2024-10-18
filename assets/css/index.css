@@ -147,31 +147,73 @@
     background-color: #f1f1f1;
 }
 
-.item {
-    display: inline-block;
-    width: 30vh; 
+.item, .item2 {
     height: auto; 
     text-align: center;
-    flex: none;
     margin-right: 10px;
 }
 
-.item img {
-    width: 150px;
-    height: 220px;
+.item {
+    width: 30vh; 
+}
+
+.item img, .item2 img {
     object-fit: cover; 
     border-radius: 12px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item p {
-    margin-top: 20px;
-    text-align: center; 
-    
+.item img {
+    width: 150px;
+    height: 220px;
 }
 
-.item img:hover {
+.item p, .item2 p {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    white-space: normal;
+}
+
+.item img:hover, .item2 img:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
 }
+
+/* Bloc 4 PC - coup de coeur */
+
+.bg-fav {
+    background-image: url('../images/bg-bloc-fav.png');
+    background-size: cover;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+
+.bg-fav .main-container {
+    padding: 20px 0px;
+}
+
+.item2 {
+    width: 43vh; 
+}
+
+.item2 img {
+    width: 250px;
+    height: 120px;
+}
+
+.item2More {
+    background-color: #653FC0;
+}
+
+/*.bg-footer-wave {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Vague_arrière_plan.png');
+    background-size: cover;
+    background-position: center;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+}*/
