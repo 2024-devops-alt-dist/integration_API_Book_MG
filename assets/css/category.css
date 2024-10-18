@@ -12,6 +12,12 @@
     .link-home {
         color: black;
         margin-left: -140px;
+        text-decoration: underline;
+    }
+
+    h1 {
+        margin-top: -20px;
+        margin-bottom: 15px;
     }
 
     .logo-h1 {
@@ -27,6 +33,12 @@
         padding-left: var(--padding-m);
         margin-top: var(--margin-xl);
         width: 45%;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .category-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
 
     .categories {
@@ -57,6 +69,7 @@
         font-size: var(--font-size-xs);
         color: black;
         margin-left: -25px;
+        text-decoration: underline;
     }
 
     .img-title {
