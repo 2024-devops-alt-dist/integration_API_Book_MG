@@ -2,13 +2,21 @@
 @import url("./index.css");
 
 /* Responsif HomePage*/
-@media (max-width: 500px) {
-    .bloc-slide {
+@media (max-width: 501px) {
+    .item p {
+        font-size: 4vw;
+    }
+
+    .item {
+        margin-right: 0px;
+    }
+
+    .bloc-slide, .bg-about, .title-destock {
         display: none;
     }
 
-    .bg-about {
-        display: none;
+    .title-mobile {
+        display: block;
     }
 
     .heading-mobile {
@@ -34,6 +42,18 @@
         background-image: none;
         border: 1px solid rgba(255, 0, 0, 0);
     }
+
+    .title-mobile h2 {
+        font-size: 35px;
+    }
+    .title-mobile p {
+        font-size: 15px;
+        text-decoration: underline;
+    }
+
+    .custom-mob {
+        align-items: center;
+    }
 }
 
 @media (max-width: 685px) {
@@ -45,5 +65,15 @@
 @media (max-width: 1356px) {
     .line {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 40vw; /* Ajuster la largeur des items pour les écrans moyens */
+    }
+
+    .item p {
+        font-size: 3vw; /* Ajuster la taille du texte pour les écrans moyens */
     }
 }

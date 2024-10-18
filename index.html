@@ -13,24 +13,24 @@
 <body>
     <header>
         <nav class="bg-white rm-mobile">
-            <img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac" />
-            
+            <a href="index.html"><img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac" /></a>
+    
             <!-- Menu Burger -->
             <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
                 &#9776;
             </div>
     
             <div class="menu menuPC">
-                <p><a href="accueil.html">Accueil</a></p>
-                <p><a href="#">Catégories</a></p>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="category.html">Catégories</a></p>
                 <p><a href="#">FAQ</a></p>
             </div>
             <div class="right-section menuPC" >
-                <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
-                <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
+                <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" /></a>
+                <a href="account.html"><img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" /></a>
             </div>
         </nav>
-        
+    
         <!-- Conteneur du menu burger -->
         <div class="menu-container" id="menuContainer">
             <div class="menu" id="navMenu">
@@ -38,19 +38,19 @@
                 <p><a href="category.html">Catégories</a></p>
                 <p><a href="#">FAQ</a></p>
             </div>
-            
+    
             <div class="right-section" id="rightSection">
-                <img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" />
-                <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" />
+                <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" /></a>
+                <a href="account.html"><img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" /></a>
             </div>
         </div>
     
         <nav class="navmobile">
             <div class="icon-container">
-                <img class="icon-size" src="assets/icons/utils/icon-home-actif.svg" alt="Navbar - Accueil" />
-                <img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche" />
-                <img class="icon-size" src="assets/icons/utils/icon-cart-inactif.svg" alt="Navbar - Votre panier" />
-                <img class="icon-size" src="assets/icons/utils/icon-profil-inactif.svg" alt="Navbar - Votre profil" />
+                <a href="index.html"><img class="icon-size" src="assets/icons/utils/icon-home-actif.svg" alt="Navbar - Accueil" /></a>
+                <a href="#"><img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche" /></a>
+                <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon-cart-inactif.svg" alt="Navbar - Votre panier" /></a>
+                <a href="account.html"><img class="icon-size" src="assets/icons/utils/icon-profil-inactif.svg" alt="Navbar - Votre profil" /></a>
             </div>
         </nav>
     </header>
@@ -96,14 +96,23 @@
         </section>
 
         <section class="bg-news">
-            <div class="main-container" style="border: 1px solid blue;">
-                <p class="title-upper">NOUVEAUTÉS</p>
-                <div class="d-flex cust-justi">
-                    <h2>Les dernières sorties</h2>
-                    <button class="btn-book" id="" type="button">Voir plus  ></button>
+            <div class="main-container">
+                <div class="title-destock">
+                    <p class="title-upper cust-color">NOUVEAUTÉS</p>
+                    <div class="d-flex cust-justi">
+                        <h2>Les dernières sorties</h2>
+                        <button class="btn-book" id="" type="button">Voir plus  ></button>
+                    </div>
                 </div>
 
-                <ul class="carousel">
+                <div class="title-mobile">
+                    <div class="d-flex cust-justi custom-mob">
+                        <h2>Les nouveautés</h2>
+                        <a href="#"><p>Voir plus ></p></a>
+                    </div>
+                </div>
+
+                <ul class="carousel" role="list" aria-label="découvrez les nouveautés">
                     <li class="item-a">
                         <div class="item">
                             <img class="" src="assets/images/couverture_powerle.jpg" alt="Icon Livre" />
@@ -161,36 +170,43 @@
                 </ul>
             </div>
         </section>
+
+        <section>
+            <div class="main-container" style="border: 1px solid blue;">
+
+            </div>
+        </section>
+        
     <!-- FIN BODY -->
 
-    <footer >
+    <footer>
         <div class="bg-white-footer">
-            <img class="logo-footer" src="assets/logo_vertical.png" alt="logo BiblioManiac"/>
+            <a href="index.html"><img class="logo-footer" src="assets/logo_vertical.png" alt="logo BiblioManiac"/></a>
             <div>
                 <h3>Menu :</h3>
                 <ul>
-                    <li>Accueil</li>
-                    <li>Catégories</li>
+                    <a href="index.html"><li>Accueil</li></a>
+                    <a href="category.html"><li>Catégories</li></a>
                 </ul>
             </div>
             <div>
                 <h3>Services :</h3>
                 <ul>
-                    <li>FAQ</li>
-                    <li>CGU</li>
-                    <li>Mentions Légales</li>
+                    <a href="#"><li>FAQ</li></a>
+                    <a href="#"><li>CGU</li></a>
+                    <a href="#"><li>Mentions Légales</li></a>
                 </ul>
             </div>
-
+    
             <div>
                 <div class="social-media">
                     <h3>Suivez-nous :</h3>
-                    <img class="icon-rs" src="assets/icons/utils/icon-fb.svg" alt="logo Facebook"/>
-                    <img class="icon-rs" src="assets/icons/utils/icon-insta.svg" alt="logo Instagram"/>
+                    <a href="https://facebook.com"><img class="icon-rs" src="assets/icons/utils/icon-fb.svg" alt="logo Facebook"/></a>
+                    <a href="https://instagram.com"><img class="icon-rs" src="assets/icons/utils/icon-insta.svg" alt="logo Instagram"/></a>
                 </div>
                 <div>
                     <h3>Newsletter :</h3>
-                    <div class="">
+                    <div>
                         <input id="newsletter" type="text" class="form-control form-nl" placeholder="Adresse email">
                         <button class="btn-nl" id="" type="button">S'abonner</button>
                     </div>
