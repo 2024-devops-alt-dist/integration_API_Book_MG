@@ -1,0 +1,89 @@
+@import url("./styles.css");
+@import url("./index.css");
+@import url("./index-mobile.css");
+
+
+
+@media (max-width: 500px) {
+    .bg-cust {
+        background-color: rgba(39, 153, 229, 0.33);
+    }
+
+    .filterbar {
+        background-color: rgba(39, 153, 229, 0.12);
+        justify-content: space-between;
+        padding: 15px 50px;
+    }
+
+    .main-container.pb-none {
+        padding-bottom: 25px;
+    }
+
+    .mb-4 {
+        margin-bottom: 55px;
+    }
+
+    .pb-2 {
+        padding-bottom: 25px;
+    }
+
+    .pb-none p, .content-cat-detail p {
+        font-size: 17px;
+    }
+
+    .cust-link {
+        padding-top: 25px;
+        padding-left: 20px;
+        text-decoration: underline;
+        font-size: var(--font-size-xs);
+    }
+
+    .content-cat-detail img {
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 150px;
+        height: auto;
+    }
+
+    .content-cat-detail {
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .p-none {
+        margin-top: 15px;
+    }
+
+    .content-cat-detail h3 {
+        font-size: 25px;
+    }
+
+    .details-book {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .auteur {
+        font-style: italic;
+        margin: 5px 0;
+    }
+
+    .date {
+        opacity: 50%;
+    }
+
+    .synopsis {
+        font-size: 15px !important;
+    }
+
+    .btn-details {
+        text-decoration: underline;
+        font-size: 15px;
+        color: var(--color-dark-purple);
+    }
+}
