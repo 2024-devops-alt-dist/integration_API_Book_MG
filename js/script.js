@@ -34,3 +34,5 @@ heartIcon.addEventListener('click', function() {
         heartIcon.alt = 'coeur vide'; // Met à jour le texte alternatif
     }
 });
+
+
