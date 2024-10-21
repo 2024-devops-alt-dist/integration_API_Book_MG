@@ -1,9 +1,5 @@
 @import url("./styles.css");
 
-.page-title {
-    margin-bottom: var(--margin-xl);
-}
-
 @media (min-width: 501px) {
     .link-home {
         color: black;
