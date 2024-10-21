@@ -30,13 +30,13 @@
     width: 100%;
 }
 
-.login-box .logo {
-    width: 100px;
+.login-box .logo, .register-box .logo {
+    width: 80px;
     margin-bottom: 20px;
 }
 
-.login-box h1 {
-    font-size: 35px;
+.login-box h1, .register-box h1 {
+    font-size: 33px;
     margin-bottom: 35px;
 }
 
@@ -46,7 +46,7 @@
     padding: 10px 20px;
     margin: 10px 0;
     border: 1px solid rgba(102, 63, 192, 0.4);
-    color: rgba(86, 54, 161, 0.603);
+    color: rgba(86, 54, 161, 0.6);
     border-radius: 30px;
     box-sizing: border-box;
 }
@@ -65,12 +65,12 @@
     color: white;
 }
 
-.login-box p {
+.login-box p, .register-box p {
     margin-top: 20px;
     font-size: 14px;
 }
 
-.login-box p a {
+.login-box p a, .register-box p a {
     text-decoration: underline;
     font-style: italic;
     color: rgba(102, 63, 192);
@@ -79,5 +79,9 @@
 @media (max-width: 500px) {
     .form-login {
         padding: 0 25px;
+    }
+
+    .content-form-login {
+        padding-bottom: 40px;
     }
 }

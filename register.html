@@ -6,7 +6,7 @@
     <title>BiblioManiac - Connexion</title>
     
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link href="assets/css/login.css" rel="stylesheet"/>
+    <link href="assets/css/register.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 
@@ -61,18 +61,24 @@
         </nav>
     </header>
 
-    <section class="form-login">
-        <div class="main-container content-form-login">
-            <div class="login-box">
-                <img class="logo" src="assets/logo.png" alt="logo BiblioManiac"/>
-                <h1>Connectez-vous</h1>
-                <form action="login" method="POST">
-                    <input type="email" name="email" placeholder="Adresse e-mail"> <!--required -->
-                    <input type="password" name="password" placeholder="Mot de passe"> <!--required -->
-                    <a href="#"><p class="forgot-password">Mot de passe oublié ?</p></a>
-                    <button type="submit" class="btn-add-list" href="index.html">Se connecter</button>
+    <section class="form-register">
+        <div class="main-container content-form-register">
+            <div class="register-box">
+                <img class="logo" src="assets/logo.png" alt="logo BiblioManiac" />
+                <h1>Inscrivez-vous</h1>
+                <form action="register" method="POST">
+                    <div class="name-fields">
+                        <input type="text" name="firstname" placeholder="Prénom">
+                        <input type="text" name="lastname" placeholder="Nom">
+                    </div>
+                    <input type="date" name="birthdate" placeholder="Date de naissance">
+                    <div class="email-password-fields">
+                        <input type="email" name="email" placeholder="Adresse e-mail">
+                        <input type="password" name="password" placeholder="Mot de passe">
+                    </div>
+                    <button type="submit" class="btn-add-list" href="index.html">S'inscrire</button>
                 </form>
-                <p>Pas de compte ? <a href="register.html">Inscrivez-vous</a></p>
+                <p>Déjà un compte ? <a href="login.html">Connectez-vous</a></p>
             </div>
         </div>
     </section>
