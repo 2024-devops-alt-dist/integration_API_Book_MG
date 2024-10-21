@@ -143,8 +143,12 @@ hr {
     }
 
     h2 {
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-l);
         margin-top: 20px;
         margin-bottom: 8px;
+    }
+
+    .h2-small {
+        font-size: var(--font-size-s);
     }
 }
