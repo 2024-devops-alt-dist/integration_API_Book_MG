@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>BiblioManiac - Catégories</title>
-    <link href="assets/css/category.css" rel="stylesheet"/>
+    <title>BiblioManiac - Panier</title>
+    <link href="assets/css/cart.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 <body>
@@ -52,8 +52,102 @@
     </nav>
 </header>
 
-<section class="main-container">
+<section >
+    <!-- En-tête mobile-->
+    <div class="d-flex heading-mobile bg-cust">
+        <img class="logo-head-mobile" src="assets/logo.png" alt="logo BiblioManiac" />
+        <h1>Panier</h1>
+    </div>
+    <div class="main-container test">
+        <div class="title-content">
+            <h2>PANIER</h2>
+            <p>Vous souhaitez réserver :</p>
+        </div>
 
+        <div class="separator"></div>
+
+        <div class="main-container list-details pb-cart">
+            <div class="d-flex content-cat-detail p-none">
+                <img class="img-couv" src="assets/images/couverture_la_psy.jpg" alt="Couverture La psy" />
+                <div class="details-book w-custo">
+                    <div>
+                        <div class="d-flex justi-between">
+                            <h3>Powerless</h3>
+                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer" />
+                        </div>
+                        <p class="auteur">par Lauren Roberts</p>
+                        <p class="date">17/10/2024</p>
+                    </div>
+                    <p class="mt-auto"><a href="#" class="btn-details">Voir détails ></a></p>
+                </div>
+            </div>
+            <div class="d-flex content-cat-detail">
+                <img class="img-couv" src="assets/images/couverture_la_famille_den_face.jpg" alt="Couverture La Famille d'en face" />
+                <div class="details-book d-flex flex-column w-custo">
+                    <div>
+                        <div class="d-flex justi-between">
+                            <h3>La Famille d'en face</h3>
+                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer" />
+                        </div>
+                        <p class="auteur">par Nicole Trope</p>
+                        <p class="date">05/04/2024</p>
+                    </div>
+                    <p class="mt-auto"><a href="#" class="btn-details">Voir détails ></a></p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="separator"></div>
+
+        <div>
+            <p>Choisir la date de retrait : </p>
+            <input type="date" id="date-retrait" class="date-input">
+
+            <p class="mb-3">Date de retour : 18/12/2024</p>
+        </div>
+
+        <button class="btn-book" id="" type="button">Valider le panier</button>
+    </div>
+
+    <div class="bg-reco">
+        <div class="main-container reco-content">
+            <h3> Vous aimerez peut-être : </h3>
+
+            <ul class="carousel carousel-cart" role="list" aria-label="découvrez les nouveautés">
+                <li class="item-a">
+                    <div class="item">
+                        <img class="" src="assets/images/couverture_powerle.jpg" alt="Couverture Powerless" />
+                        <p>Powerless</p>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="item">
+                        <img class="" src="assets/images/A-tout-jamais.jpg" alt="Couverture À tout jamais" />
+                        <p>À tout jamais</p>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="item">
+                        <img class="" src="assets/images/Personne-ne-doit-savoir-Prix-des-lectrices-2023.jpg" alt="Couverture Personne ne doit savoir" />
+                        <p>Personne ne doit savoir</p>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="item">
+                        <img class="" src="assets/images/Kiara-diamant-ecorche-par-le-sang-Tome-1.jpg" alt="Couverture KIARA" />
+                        <p>KIARA</p>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="item">
+                        <img class="" src="assets/images/couverture_albane.jpg" alt="Couverture Albane Tom 3" />
+                        <p>Albane Tom 3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <footer>
