@@ -1,0 +1,154 @@
+@import url("./styles.css");
+
+.red {
+    color: var(--color-pink);
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: end;
+}
+
+hr {
+    border: 0.5px solid var(--color-dark-purple);
+    width: 100%;
+}
+
+.link-underline {
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark-purple);
+    font-size: var(--font-size-xxxs);
+}
+
+.img-profile {
+    width: auto;
+    height: 68px;
+    margin-right: 8px;
+}
+
+.info-card {
+    align-items: center;
+}
+
+.mail {
+    font-size: var(--font-size-xs);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.personal-infos {
+    margin-bottom: 25px;
+}
+
+.carousel {
+    overflow-x: auto;
+    padding: 30px 0 30px 30px;
+    list-style: none;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: rgb(238, 121, 11);
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.item, .item2 {
+    height: auto;
+    text-align: center;
+    margin-right: var(--margin-xl);
+}
+
+.item img, .item2 img {
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    width: 150px;
+    height: 220px;
+}
+
+.booking-status {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.past {
+    padding: var(--padding-xxs);
+    border: 1px solid var(--color-dark-purple);
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+.ongoing {
+    padding: var(--padding-xxs);
+    border: 1px solid var(--color-dark-purple);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.inactive-status {
+    background-color: #F0EEEE;
+}
+
+.active-status {
+    background-color: #928A8A;
+}
+
+@media (min-width: 501px) {
+    .img-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-h1 {
+        display: none;
+    }
+
+    h2 {
+        margin-top: 25px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-h1 {
+        width: 75px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: var(--font-size-xl);
+        margin-left: var(--margin-s);
+    }
+
+    h1, .logo-h1 {
+        margin-bottom: var(--margin-s);
+    }
+
+    h2 {
+        font-size: var(--font-size-l);
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    .h2-small {
+        font-size: var(--font-size-s);
+    }
+}
