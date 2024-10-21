@@ -27,6 +27,53 @@ hr {
     font-family: 'Montserrat', sans-serif;
 }
 
+.customer-reviews h2 {
+    margin-top: 40px;
+}
+
+.carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 60px 0 30px 30px;
+    list-style: none;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: rgb(238, 121, 11);
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.item, .item2 {
+    height: auto;
+    text-align: center;
+    margin-right: var(--margin-s);
+}
+
+.img-profile {
+    width: auto;
+    height: 68px;
+    margin-right: 8px;
+}
+
+.comment {
+    font-size: var(--font-size-xs);
+    margin-top: 4px;
+}
+
+.review-card {
+    align-items: center;
+}
+
 @media (min-width: 501px) {
     .img-mobile {
         display: none;
@@ -69,6 +116,31 @@ hr {
     .btn-book {
         margin-left: 17px;
     }
+
+    .reviews-mobile {
+        display: none;
+    }
+
+    .review-card {
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: var(--padding-m);
+        margin-right: var(--margin-l);
+        border: 1px solid var(--color-purple);
+    }
+
+    .review-text {
+        width: 500px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .comment {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -96,7 +168,7 @@ hr {
     }
 
     .buttons-mobile {
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-top: 25px;
     }
 
@@ -107,5 +179,13 @@ hr {
     .author {
         font-size: var(--font-size-xs);
         margin-top: 3px;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .review-card {
+        margin-top: 25px;
     }
 }
