@@ -3,7 +3,7 @@
 
 /* Responsif HomePage*/
 @media (max-width: 500px) {
-    .item p, .item2 p {
+    .item p, .item-fav p {
         font-size: 4vw;
     }
 
@@ -11,13 +11,16 @@
         margin-right: 0;
     }
 
-    .bloc-slide, .bg-about, .title-destock, .hide-mob {
+    .item-fav {
+        width: 39vh; 
+    }
+
+    .bloc-slide, .bloc-about, .title-destock, .hide-mob {
         display: none;
     }
 
     .bloc-mobile-cat {
         display: block;
-        margin-bottom: 30px;
     }
 
     .heading-mobile {
@@ -38,7 +41,7 @@
         height: auto;
     }
 
-    .bg-news {
+    .bloc-news {
         background-image: none;
         border: 1px solid rgba(255, 0, 0, 0);
     }
@@ -56,14 +59,14 @@
     }
 
     /* bloc favorie */
-    .bg-fav {
+    .bloc-fav {
         background-image: none;
         background-color: rgba(102, 63, 192, 0.6);
         border: 1px solid rgba(255, 0, 0, 0);
     }
 
     /* bloc catégorie */
-    .cat-mobile {
+    .bloc-list-cat {
         margin-top: var(--margin-l);
     }
 
@@ -82,7 +85,7 @@
         height: auto;
     }
 
-    .cat-slider {
+    .content-list-cat {
         gap: 15px;
         padding: 0px 0 30px 30px;
     }
@@ -136,5 +139,3 @@
         margin-top: var(--margin-s);
     }
 }
-
-

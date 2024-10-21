@@ -52,7 +52,7 @@ hr {
     background-color: #f1f1f1;
 }
 
-.item, .item2 {
+.item, .item-fav {
     height: auto;
     text-align: center;
     margin-right: var(--margin-s);

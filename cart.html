@@ -8,49 +8,55 @@
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 <body>
-<header>
-    <nav class="bg-white rm-mobile">
-        <a href="index.html"><img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac" /></a>
-
-        <!-- Menu Burger -->
-        <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
-            &#9776;
+    <header>
+        <!-- NavBar Desktop -->
+        <nav class="bg-white rm-mobile">
+            <a href="index.html"><img class="logo" src="assets/logo_horizontal.png" alt="logo BiblioManiac"/></a>
+    
+            <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+    
+            <div class="menu menuPC">
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="category.html">Catégories</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div class="right-section menuPC">
+                <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" /></a>
+                <div class="profile-menu-container">
+                    <img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" onclick="toggleProfileMenu()"/>
+                    <div id="profileMenu" class="profile-menu">
+                        <p><a href="login.html">Se connecter</a></p>
+                        <div class="separator-profil"></div>
+                        <p><a href="account.html">Mon profil</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Conteneur du menu burger - NavBar Tablette -->
+        <div class="menu-container" id="menuContainer">
+            <div class="menu" id="navMenu">
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="category.html">Catégories</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="cart.html">Mon panier</a></p>
+                <p><a href="account.html">Mon Profil</a></p>
+                <p><a href="login.html" class="btn-book">Se connecter</a></p>
+            </div>
         </div>
-
-        <div class="menu menuPC">
-            <p><a href="index.html">Accueil</a></p>
-            <p><a href="category.html">Catégories</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
-        <div class="right-section menuPC" >
-            <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" /></a>
-            <a href="account.html"><img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" /></a>
-        </div>
-    </nav>
-
-    <!-- Conteneur du menu burger -->
-    <div class="menu-container" id="menuContainer">
-        <div class="menu" id="navMenu">
-            <p><a href="index.html">Accueil</a></p>
-            <p><a href="category.html">Catégories</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
-
-        <div class="right-section" id="rightSection">
-            <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon_basket.svg" alt="Votre panier" /></a>
-            <a href="account.html"><img class="icon-profil-nav" src="assets/icons/utils/icon_profil.png" alt="Votre profil" /></a>
-        </div>
-    </div>
-
-    <nav class="navmobile">
-        <div class="icon-container">
-            <a href="index.html"><img class="icon-size" src="assets/icons/utils/icon-home-inactif.svg" alt="Navbar - Accueil" /></a>
-            <a href="#"><img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche" /></a>
-            <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon-cart-actif.svg" alt="Navbar - Votre panier" /></a>
-            <a href="account.html"><img class="icon-size" src="assets/icons/utils/icon-profil-inactif.svg" alt="Navbar - Votre profil" /></a>
-        </div>
-    </nav>
-</header>
+    
+        <!-- NavBar Mobile -->
+        <nav class="navmobile">
+            <div class="icon-container">
+                <a href="index.html"><img class="icon-size" src="assets/icons/utils/icon-home-actif.svg" alt="Navbar - Accueil"/></a>
+                <a href="#"><img class="icon-size" src="assets/icons/utils/icon-search.svg" alt="Navbar - Recherche"/></a>
+                <a href="cart.html"><img class="icon-size" src="assets/icons/utils/icon-cart-inactif.svg" alt="Navbar - Votre panier"/></a>
+                <a href="login.html"><img class="icon-size" src="assets/icons/utils/icon-profil-inactif.svg" alt="Navbar - Votre profil"/></a>
+            </div>
+        </nav>
+    </header>
 
 <section >
     <!-- En-tête mobile-->
@@ -58,7 +64,7 @@
         <img class="logo-head-mobile" src="assets/logo.png" alt="logo BiblioManiac" />
         <h1>Panier</h1>
     </div>
-    <div class="main-container test">
+    <div class="main-container pd-bloc-cart ">
         <div class="title-content">
             <h2>PANIER</h2>
             <p>Vous souhaitez réserver :</p>
@@ -67,27 +73,27 @@
         <div class="separator"></div>
 
         <div class="main-container list-details pb-cart">
-            <div class="d-flex content-cat-detail p-none">
-                <img class="img-couv" src="assets/images/couverture_la_psy.jpg" alt="Couverture La psy" />
+            <div class="d-flex content-list-detail p-none">
+                <a href="powerless.html"><img class="img-couv" src="assets/images/couverture_powerle.jpg" alt="Couverture La psy"/></a>
                 <div class="details-book w-custo">
                     <div>
                         <div class="d-flex justi-between">
                             <h3>Powerless</h3>
-                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer" />
+                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer"/>
                         </div>
                         <p class="auteur">par Lauren Roberts</p>
                         <p class="date">17/10/2024</p>
                     </div>
-                    <p class="mt-auto"><a href="#" class="btn-details">Voir détails ></a></p>
+                    <p class="mt-auto"><a href="powerless.html" class="btn-details">Voir détails ></a></p>
                 </div>
             </div>
-            <div class="d-flex content-cat-detail">
-                <img class="img-couv" src="assets/images/couverture_la_famille_den_face.jpg" alt="Couverture La Famille d'en face" />
+            <div class="d-flex content-list-detail">
+                <a href="#"><img class="img-couv" src="assets/images/couverture_la_famille_den_face.jpg" alt="Couverture La Famille d'en face"/></a>
                 <div class="details-book d-flex flex-column w-custo">
                     <div>
                         <div class="d-flex justi-between">
                             <h3>La Famille d'en face</h3>
-                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer" />
+                            <img class="icon-review" src="assets/icons/utils/icon-trash.svg" alt="icon supprimer"/>
                         </div>
                         <p class="auteur">par Nicole Trope</p>
                         <p class="date">05/04/2024</p>
@@ -97,52 +103,50 @@
             </div>
         </div>
         
-
         <div class="separator"></div>
 
-        <div>
-            <p>Choisir la date de retrait : </p>
-            <input type="date" id="date-retrait" class="date-input">
-
-            <p class="mb-3">Date de retour : 18/12/2024</p>
+        <div class="content-date">
+            <div>
+                <div class="d-flex bloc-retrait-date">
+                    <p>Choisir la date de retrait : </p>
+                    <input type="date" id="date-retrait" class="date-input">
+                </div>
+    
+                <p class="mb-3">Date de retour estimée : 18/12/2024</p>
+            </div>
+    
+            <button class="btn-book" id="validerPanier" type="button">Valider le panier</button>
         </div>
-
-        <button class="btn-book" id="" type="button">Valider le panier</button>
     </div>
 
-    <div class="bg-reco">
+    <div class="bloc-reco">
         <div class="main-container reco-content">
             <h3> Vous aimerez peut-être : </h3>
 
-            <ul class="carousel carousel-cart" role="list" aria-label="découvrez les nouveautés">
-                <li class="item-a">
+            <ul class="carousel carousel-cart" role="list" aria-label="Vous aimerez peut-être :">
+                <li>
                     <div class="item">
-                        <img class="" src="assets/images/couverture_powerle.jpg" alt="Couverture Powerless" />
-                        <p>Powerless</p>
+                        <a href="#"><img src="assets/images/couverture_arbre_au_bout_du_monde.jpg" alt="Couverture l'arbre au bout du monde"/></a>
                     </div>
                 </li>
-                <li class="item-b">
+                <li>
                     <div class="item">
-                        <img class="" src="assets/images/A-tout-jamais.jpg" alt="Couverture À tout jamais" />
-                        <p>À tout jamais</p>
+                        <a href="#"><img src="assets/images/couverture_outsphere4.jpg" alt="Couverture Outsphere 4"/></a>
                     </div>
                 </li>
-                <li class="item-c">
+                <li>
                     <div class="item">
-                        <img class="" src="assets/images/Personne-ne-doit-savoir-Prix-des-lectrices-2023.jpg" alt="Couverture Personne ne doit savoir" />
-                        <p>Personne ne doit savoir</p>
+                        <a href="#"><img src="assets/images/Kiara-diamant-ecorche-par-le-sang-Tome-1.jpg" alt="Couverture KIARA"/></a>
                     </div>
                 </li>
-                <li class="item-d">
+                <li>
                     <div class="item">
-                        <img class="" src="assets/images/Kiara-diamant-ecorche-par-le-sang-Tome-1.jpg" alt="Couverture KIARA" />
-                        <p>KIARA</p>
+                        <a href="#"><img src="assets/images/couverture_holly.jpg" alt="Couverture Holly"/></a>
                     </div>
                 </li>
-                <li class="item-e">
+                <li>
                     <div class="item">
-                        <img class="" src="assets/images/couverture_albane.jpg" alt="Couverture Albane Tom 3" />
-                        <p>Albane Tom 3</p>
+                        <a href="#"><img src="assets/images/couverture_affaire_clara_miller.jpg" alt="Couverture l'affaire de clara miller"/></a>
                     </div>
                 </li>
             </ul>
@@ -189,6 +193,23 @@
     </div>
 </footer>
 
+
+<!-- Modal de confirmation panier -->
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <img class="logo-modal" src="assets/logo.png" alt="logo BiblioManiac" />
+        <h2>Réservation confirmé !</h2>
+
+        <p class="modal-paragraphe mb-2">Nous vous attendons le 18 octobre 2024 à la Bibliothèque de Lyon 7e. </p>
+        <p class="modal-paragraphe">Horaires d’ouverture : 
+                du lundi au vendredi de 10h à 19h</p>
+
+        <p class="link-profil"><a href="account.html">Retour au profil ></a></p>
+    </div>
+</div>
+
+
+<script src="js/modal-confirmation.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
