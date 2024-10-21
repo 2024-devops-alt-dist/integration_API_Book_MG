@@ -61,11 +61,22 @@
         </nav>
     </header>
 
-    <section>
-        <div class="main-container">
-            <h1>COntenu login ici</h1>
+    <section class="form-login">
+        <div class="main-container content-form-login">
+            <div class="login-box">
+                <img class="logo" src="assets/logo.png" alt="logo BiblioManiac"/>
+                <h1>Connectez-vous</h1>
+                <form action="login" method="POST">
+                    <input type="email" name="email" placeholder="Adresse e-mail"> <!--required -->
+                    <input type="password" name="password" placeholder="Mot de passe"> <!--required -->
+                    <a href="#"><p class="forgot-password">Mot de passe oublié ?</p></a>
+                    <button type="submit" class="btn-add-list">Se connecter</button>
+                </form>
+                <p>Pas de compte ? <a href="register.html">Inscrivez-vous</a></p>
+            </div>
         </div>
     </section>
+    
 
     <footer>
         <div class="bg-white-footer">
