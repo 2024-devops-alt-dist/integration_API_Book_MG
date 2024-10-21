@@ -98,7 +98,7 @@ hr {
     }
 
     .book-details {
-        width: 70%;
+        width: 65%;
     }
 
     hr {
@@ -144,6 +144,18 @@ hr {
         word-wrap: break-word;
         overflow-wrap: break-word;
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .book-details {
+        width: 50%;
+    }
+}
+
+@media (max-width: 925px) {
+    .book-details {
+        width: 100%;
     }
 }
 

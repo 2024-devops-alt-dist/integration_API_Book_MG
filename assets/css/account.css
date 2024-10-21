@@ -39,6 +39,72 @@ hr {
     margin-bottom: 25px;
 }
 
+.carousel {
+    overflow-x: auto;
+    padding: 30px 0 30px 30px;
+    list-style: none;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: rgb(238, 121, 11);
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.item, .item2 {
+    height: auto;
+    text-align: center;
+    margin-right: var(--margin-xl);
+}
+
+.item img, .item2 img {
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    width: 150px;
+    height: 220px;
+}
+
+.booking-status {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.past {
+    padding: var(--padding-xxs);
+    border: 1px solid var(--color-dark-purple);
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+.ongoing {
+    padding: var(--padding-xxs);
+    border: 1px solid var(--color-dark-purple);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.inactive-status {
+    background-color: #F0EEEE;
+}
+
+.active-status {
+    background-color: #928A8A;
+}
+
 @media (min-width: 501px) {
     .img-title {
         display: flex;
