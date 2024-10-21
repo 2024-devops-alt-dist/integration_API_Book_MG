@@ -19,3 +19,18 @@ function closeMenu(event) {
 }
 
 document.addEventListener('click', closeMenu);
+
+// Fonction pour mettre un like ou l'enlever
+const heartIcon = document.getElementById('heart-icon');
+
+heartIcon.addEventListener('click', function() {
+    if (heartIcon.src.includes('coeur-vide.svg')) {
+        // Si l'image est "coeur-vide", change pour "coeur-plein"
+        heartIcon.src = 'assets/icons/utils/coeur-plein.svg';
+        heartIcon.alt = 'coeur plein'; // Met à jour le texte alternatif
+    } else {
+        // Sinon, change pour "coeur-vide"
+        heartIcon.src = 'assets/icons/utils/coeur-vide.svg';
+        heartIcon.alt = 'coeur vide'; // Met à jour le texte alternatif
+    }
+});
