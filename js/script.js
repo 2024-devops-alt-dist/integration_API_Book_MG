@@ -1,3 +1,15 @@
+function toggleProfileMenu() {
+    document.getElementById('profileMenu').classList.toggle('show-menu');
+}
+
+// Fermer le menu si on clique ailleurs
+window.addEventListener('click', function(event) {
+    const profileMenu = document.getElementById('profileMenu');
+    if (!event.target.closest('.icon-profil-nav')) {
+        profileMenu.classList.remove('show-menu');
+    }
+});
+
 function toggleMenu() {
     const menuContainer = document.getElementById('menuContainer');
 
