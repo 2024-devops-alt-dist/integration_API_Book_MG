@@ -46,16 +46,16 @@
 }
 
 /* Bloc 2 PC - Comment ça marche */
-.bg-about {
+.bloc-about {
     background-image: url('../images/bg-bloc-about.png');
     background-size: cover;
 }
 
-.bg-about .main-container {
+.bloc-about .main-container {
     padding-bottom: 0;
 }
 
-.bloc-icons {
+.bloc-icons-about {
     display: flex;
     justify-content: space-around;
     margin-top: var(--margin-xxl);
@@ -64,7 +64,7 @@
     z-index: 2;
 }
 
-.bloc-icons div {
+.bloc-icons-about div {
     flex: 1 1 200px;
     display: flex;
     flex-direction: column;
@@ -74,14 +74,14 @@
     box-sizing: border-box;
 }
 
-.bloc-icons img {
+.bloc-icons-about img {
     width: 100%;
     max-width: 150px;
     height: auto;
     margin-bottom: var(--margin-l);
 }
 
-.bloc-icons p {
+.bloc-icons-about p {
     margin: 0px 20px;
 }
 
@@ -103,18 +103,18 @@
 .bloc-mobile-cat {
     display: none;
 }
-.bg-news {
+.bloc-news {
     background-image: url('../images/bg-bloc-news.png');
     background-size: cover;
     border: 1px solid rgba(255, 0, 0, 0);
 }
 
-.bg-news .main-container {
+.bloc-news .main-container {
     padding: 20px 0px;
 }
 
 .title-upper.cust-color {
-    color:rgba(255, 255, 255, 0.438);
+    color:rgba(255, 255, 255, 0.44);
 }
 
 .cust-justi {
@@ -131,20 +131,7 @@
     scroll-behavior: smooth;
 }
 
-.carousel::-webkit-scrollbar {
-    height: 8px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-    background-color: rgb(238, 121, 11);
-    border-radius: 10px;
-}
-
-.carousel::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-.item, .item2 {
+.item, .item-fav {
     height: auto; 
     text-align: center;
     margin-right: var(--margin-s);
@@ -154,7 +141,7 @@
     width: 30vh; 
 }
 
-.item img, .item2 img {
+.item img, .item-fav img {
     object-fit: cover; 
     border-radius: 12px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -166,41 +153,59 @@
     height: 220px;
 }
 
-.item p, .item2 p {
+.item p, .item-fav p {
     margin-top: 20px;
     display:flex;
     justify-content: center;
     white-space: normal;
 }
 
-.item img:hover, .item2 img:hover {
+.item img:hover, .item-fav img:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
 }
 
 /* Bloc 4 PC - coup de coeur */
 
-.bg-fav {
+.bloc-fav {
     background-image: url('../images/bg-bloc-fav.png');
     background-size: cover;
     border: 1px solid rgba(255, 0, 0, 0);
 }
 
-.bg-fav .main-container {
+.bloc-fav .main-container {
     padding: 20px 0px;
 }
 
-.item2 {
+.item-fav {
     width: 43vh; 
 }
 
-.item2 img {
+.item-fav img {
     width: 250px;
     height: 120px;
 }
 
-.item2More {
+.item-fav-more {
     background-color: #653FC0;
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-right: 50px;
+}
+
+.item-fav-more:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.item-fav-more p {
+    color: white;
+    font-weight: 700;
 }
 
 /* Bloc 5 PC - recherche catégories */
@@ -234,11 +239,11 @@ img[src*="icon_theatre.svg"] {
     filter: brightness(0) saturate(100%) invert(13%) sepia(29%) saturate(4112%) hue-rotate(266deg) brightness(81%) contrast(95%);
 }
 
-.custGap {
+.cust-gap {
     gap: 10px;
 }
 
-.custMarg {
+.cust-marg {
     margin-top: var(--margin-s);
 }
 
@@ -261,7 +266,6 @@ img[src*="icon_theatre.svg"] {
 }
 
 .square-block p {
-    /* margin-top: 14px; */
     font-size: 17px;
     font-weight: 600;
 }
