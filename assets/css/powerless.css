@@ -33,7 +33,6 @@ hr {
 
 .carousel {
     overflow-x: auto;
-    white-space: nowrap;
     padding: 60px 0 30px 30px;
     list-style: none;
     display: flex;
@@ -83,6 +82,8 @@ hr {
         width: 336px;
         height: auto;
         border-radius: 12px;
+        margin-bottom: 23px;
+        margin-right: 35px;
     }
 
     h1 {
@@ -93,16 +94,19 @@ hr {
     .flex-desktop {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .book-details {
-        margin-left: 25px;
-        width: 80%;
+        width: 70%;
+    }
+
+    hr {
+        margin-top: 20px;
     }
 
     h2 {
         font-size: var(--font-size-m);
-        margin-top: 20px;
     }
 
     .buttons-desktop {
@@ -158,6 +162,16 @@ hr {
         overflow: hidden;
     }
 
+    .img-mobile-psy {
+        width: 100vw;
+        height: 220px;
+        background-image: url('../images/couverture_la_psy.jpg');
+        background-size: cover;
+        background-position: 50% 31%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
     h1 {
         font-size: var(--font-size-xl);
     }
@@ -187,5 +201,9 @@ hr {
 
     .review-card {
         margin-top: 25px;
+    }
+
+    .reviews-mobile {
+        margin-bottom: 30px;
     }
 }
