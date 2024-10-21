@@ -1,0 +1,111 @@
+@import url("./styles.css");
+
+
+.flex-end
+{
+    justify-content: space-between;
+}
+
+.icon-review {
+    width: 20px;
+    margin-top: -6px;
+    margin-left: 2px;
+}
+
+.grey-text {
+    color: rgba(108, 108, 108, 0.44);
+    font-size: var(--font-size-xs);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+hr {
+    border : 0.5px solid rgba(108, 108, 108, 0.44);
+}
+
+.btn-add-list, .btn-book {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 501px) {
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        width: 336px;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    h1 {
+        margin-top: -20px;
+        margin-bottom: 15px;
+    }
+
+    .flex-desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .book-details {
+        margin-left: 25px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: var(--font-size-m);
+        margin-top: 20px;
+    }
+
+    .buttons-desktop {
+        margin-top: -23px;
+    }
+
+    .buttons-mobile {
+        display: none;
+    }
+
+    .btn-book {
+        margin-left: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        width: 100vw;
+        height: 220px;
+        background-image: url('../images/couverture_powerle.jpg');
+        background-size: cover;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-s);
+        margin-top: 20px;
+    }
+
+    .buttons-mobile {
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+
+    .buttons-desktop {
+        display: none;
+    }
+
+    .author {
+        font-size: var(--font-size-xs);
+        margin-top: 3px;
+    }
+}
