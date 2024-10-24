@@ -11,24 +11,13 @@
     />
     <link href="/assets/css/index.css" rel="stylesheet" />
     <link href="/assets/css/index-mobile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/filter_search.css" />
     <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
     <script src="js/script.js" type="text/html" defer></script>
     <script src="/js/search_book.js" type="module"></script>
   </head>
 
   <body>
-    <form id="form-filter">
-      <div>
-        <label for="title-book">Recherche par titre de livre</label>
-        <input
-          name="title"
-          type="search"
-          placeholder="Ex : Harry Potter"
-          id="title-book"
-        />
-        <input type="submit" value="Search" />
-      </div>
-    </form>
     <div id="container-sugest"></div>
     <header>
       <!-- NavBar Desktop -->
@@ -121,6 +110,18 @@
       <div class="content-slide">
         <h1>Bibliomaniac</h1>
         <h2>l’indispensable pour vos lectures</h2>
+        <form id="form-filter">
+          <div>
+            <label for="title-book">Recherche par titre de livre</label>
+            <input
+              name="title"
+              type="search"
+              placeholder="Ex : Harry Potter"
+              id="title-book"
+            />
+            <input type="submit" value="Search" />
+          </div>
+        </form>
       </div>
     </section>
 
