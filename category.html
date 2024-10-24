@@ -6,6 +6,7 @@
     <title>BiblioManiac - Catégories</title>
     <link href="assets/css/category.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <script src="js/api.js" defer></script>
 </head>
 <body>
 <header>
@@ -74,7 +75,7 @@
             </div>
         </div>
         <div class="category-container">
-            <a href="thriller.html" class="lien-thriller">
+            <a href="thriller.html" class="lien-thriller" onclick="getBooksByCategory('thriller')">
                 <div class="img-title">
                     <img src="assets/icons/categories/icon_policier.svg" alt="icone policier">
                     <h2>Policier / Thriller</h2>
