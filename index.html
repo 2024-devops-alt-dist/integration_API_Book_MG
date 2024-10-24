@@ -12,9 +12,24 @@
     <link href="/assets/css/index.css" rel="stylesheet" />
     <link href="/assets/css/index-mobile.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+    <script src="js/script.js" type="text/html" defer></script>
+    <script src="/js/search_book.js" type="module"></script>
   </head>
 
   <body>
+    <form id="form-filter">
+      <div>
+        <label for="title-book">Recherche par titre de livre</label>
+        <input
+          name="title"
+          type="search"
+          placeholder="Ex : Harry Potter"
+          id="title-book"
+        />
+        <input type="submit" value="Search" />
+      </div>
+    </form>
+    <div id="container-sugest"></div>
     <header>
       <!-- NavBar Desktop -->
       <nav class="bg-white rm-mobile">
@@ -536,7 +551,5 @@
         <p>2024 © Bibliothèque de Lyon - Copyright</p>
       </div>
     </footer>
-
-    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
