@@ -7,6 +7,11 @@ const containerSugest = document.getElementById("container-sugest");
 
 const searchCache = {};
 
+/**
+ * getBooksApi
+ * @param {string} querry
+ * @returns []books || []
+ */
 const getBooksApi = async (querry) => {
   const resp = await fetchApiBookByTitle(querry, searchCache);
   if (resp && resp.items) {
@@ -16,6 +21,10 @@ const getBooksApi = async (querry) => {
   }
 };
 
+/**
+ * Ecoute l'évenement sur l'input de recherche de livre par titre
+ * @param {Event} e
+ */
 const getTitleBook = async (e) => {
   e.preventDefault();
   const querry = input.value.trim();
@@ -28,6 +37,11 @@ const getTitleBook = async (e) => {
   console.log(input.value);
 };
 
+/**
+ * Créer une card avec les infos du livre et l'affiche dans le DOM
+ * @param {book} book
+ * @param {string} idBook
+ */
 const createBook = (book, idBook) => {
   const card = document.createElement("div");
   card.className = "item";
