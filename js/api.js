@@ -1,8 +1,10 @@
+const mainContainer = document.getElementById('main-container')
 const containerBook = document.getElementById('container-book')
 const detailsBook = document.getElementById('details-book')
 const detailsBookContent = document.getElementById('details-book-content')
 const div = document.getElementById('div')
 const imgContainer = document.getElementById('icon-image-content')
+mainContainer.appendChild(containerBook)
 
 const getBooksByCategory = async (query) => {
     try {
@@ -11,7 +13,6 @@ const getBooksByCategory = async (query) => {
         const books = data.items.map(book => {
             return book.volumeInfo;
         });
-        console.log(books);
         return books;
     } catch (error) {
         console.log(error.message);
@@ -26,6 +27,7 @@ const getBooksByCategory = async (query) => {
         const img = document.createElement('img')
         const titleInfo = book.title;
         const authorsArray = book.authors
+        const publishedDate = book.publishedDate
         const description = book.description
         if(book.imageLinks) {
             sourceImg = book.imageLinks?.smallThumbnail
@@ -41,7 +43,17 @@ const getBooksByCategory = async (query) => {
         detailsBook.prepend(title); 
         detailsBook.appendChild(imgContainer)
         
-        const auhtor = 
+        const author = document.createElement('p')
+        author.classList.add('auteur')
+        for (let element of authorsArray) {
+         author.textContent = "par " + element 
+        }
+        div.appendChild(author)
+
+        const date = document.createElement('p')
+        date.classList.add('date')
+        date.textContent = publishedDate
+        div.appendChild(date)
         
         const synopsis = document.createElement('p') 
         synopsis.textContent = description;
