@@ -74,6 +74,9 @@ hr {
 }
 
 @media (min-width: 501px) {
+    .img-mobile-psy{
+        display: none;
+    }
     .img-mobile {
         display: none;
     }
@@ -177,7 +180,7 @@ hr {
     .img-mobile-psy {
         width: 100vw;
         height: 220px;
-        background-image: url('../images/couverture_la_psy.jpg');
+        /*background-image: url('../images/couverture_la_psy.jpg');*/
         background-size: cover;
         background-position: 50% 31%;
         background-repeat: no-repeat;
