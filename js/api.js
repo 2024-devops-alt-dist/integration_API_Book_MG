@@ -54,6 +54,7 @@ const getBooksByCategory = async (query) => {
         date.classList.add('date')
         date.textContent = publishedDate
         div.appendChild(date)
+        // div.appendChild(date)
         
         const synopsis = document.createElement('p') 
         synopsis.textContent = description;
