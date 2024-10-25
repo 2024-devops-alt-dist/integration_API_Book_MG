@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BiblioManiac - Panier</title>
+    <link href="/assets/css/cart.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  </head>
+  <body>
+    <header>
+      <!-- NavBar Desktop -->
+      <nav class="bg-white rm-mobile">
+        <a href="/index.html"
+          ><img
+            class="logo"
+            src="/assets/logo_horizontal.png"
+            alt="logo BiblioManiac"
+        /></a>
+
+        <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+
+        <div class="menu menuPC">
+          <p><a href="/index.html">Accueil</a></p>
+          <p><a href="/category.html">Catégories</a></p>
+          <p><a href="#">FAQ</a></p>
+        </div>
+        <div class="right-section menuPC">
+          <a href="/pages/cart.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon_basket.svg"
+              alt="Votre panier"
+          /></a>
+          <div class="profile-menu-container">
+            <img
+              class="icon-profil-nav"
+              src="/assets/icons/utils/icon_profil.png"
+              alt="Votre profil"
+              onclick="toggleProfileMenu()"
+            />
+            <div id="profileMenu" class="profile-menu">
+              <p><a href="/pages/login.html">Se connecter</a></p>
+              <div class="separator-profil"></div>
+              <p><a href="/pages/account.html">Mon profil</a></p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Conteneur du menu burger - NavBar Tablette -->
+      <div class="menu-container" id="menuContainer">
+        <div class="menu" id="navMenu">
+          <p><a href="/index.html">Accueil</a></p>
+          <p><a href="/category.html">Catégories</a></p>
+          <p><a href="#">FAQ</a></p>
+          <p><a href="/pages/cart.html">Mon panier</a></p>
+          <p><a href="/pages/account.html">Mon Profil</a></p>
+          <p><a href="/pages/login.html" class="btn-book">Se connecter</a></p>
+        </div>
+      </div>
+
+      <!-- NavBar Mobile -->
+      <nav class="navmobile">
+        <div class="icon-container">
+          <a href="/index.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-home-actif.svg"
+              alt="Navbar - Accueil"
+          /></a>
+          <a href="#"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-search.svg"
+              alt="Navbar - Recherche"
+          /></a>
+          <a href="/pages/cart.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-cart-inactif.svg"
+              alt="Navbar - Votre panier"
+          /></a>
+          <a href="/pages/account.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-profil-inactif.svg"
+              alt="Navbar - Votre profil"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <!-- En-tête mobile-->
+      <div class="d-flex heading-mobile bg-cust">
+        <img
+          class="logo-head-mobile"
+          src="/assets/logo.png"
+          alt="logo BiblioManiac"
+        />
+        <h1>Panier</h1>
+      </div>
+      <div class="main-container pd-bloc-cart">
+        <div class="title-content">
+          <h2>PANIER</h2>
+          <p>Vous souhaitez réserver :</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="main-container list-details pb-cart">
+          <div class="d-flex content-list-detail p-none">
+            <a href="/pages/powerless.html"
+              ><img
+                class="img-couv"
+                src="/assets/images/couverture_powerle.jpg"
+                alt="Couverture La psy"
+            /></a>
+            <div class="details-book w-custo">
+              <div>
+                <div class="d-flex justi-between">
+                  <h3>Powerless</h3>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-trash.svg"
+                    alt="icon supprimer"
+                  />
+                </div>
+                <p class="auteur">par Lauren Roberts</p>
+                <p class="date">17/10/2024</p>
+              </div>
+              <p class="mt-auto">
+                <a href="/pages/powerless.html" class="btn-details"
+                  >Voir détails ></a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="d-flex content-list-detail">
+            <a href="#"
+              ><img
+                class="img-couv"
+                src="/assets/images/couverture_la_famille_den_face.jpg"
+                alt="Couverture La Famille d'en face"
+            /></a>
+            <div class="details-book d-flex flex-column w-custo">
+              <div>
+                <div class="d-flex justi-between">
+                  <h3>La Famille d'en face</h3>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-trash.svg"
+                    alt="icon supprimer"
+                  />
+                </div>
+                <p class="auteur">par Nicole Trope</p>
+                <p class="date">05/04/2024</p>
+              </div>
+              <p class="mt-auto">
+                <a href="#" class="btn-details">Voir détails ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="content-date">
+          <div>
+            <div class="d-flex bloc-retrait-date">
+              <p>Choisir la date de retrait :</p>
+              <input type="date" id="date-retrait" class="date-input" />
+            </div>
+
+            <p class="mb-3">Date de retour estimée : 18/12/2024</p>
+          </div>
+
+          <button class="btn-book" id="validerPanier" type="button">
+            Valider le panier
+          </button>
+        </div>
+      </div>
+
+      <div class="bloc-reco">
+        <div class="main-container reco-content">
+          <h3>Vous aimerez peut-être :</h3>
+
+          <ul
+            class="carousel carousel-cart"
+            role="list"
+            aria-label="Vous aimerez peut-être :"
+          >
+            <li>
+              <div class="item">
+                <a href="#"
+                  ><img
+                    src="/assets/images/couverture_arbre_au_bout_du_monde.jpg"
+                    alt="Couverture l'arbre au bout du monde"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#"
+                  ><img
+                    src="/assets/images/couverture_outsphere4.jpg"
+                    alt="Couverture Outsphere 4"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#"
+                  ><img
+                    src="/assets/images/Kiara-diamant-ecorche-par-le-sang-Tome-1.jpg"
+                    alt="Couverture KIARA"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#"
+                  ><img
+                    src="/assets/images/couverture_holly.jpg"
+                    alt="Couverture Holly"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#"
+                  ><img
+                    src="/assets/images/couverture_affaire_clara_miller.jpg"
+                    alt="Couverture l'affaire de clara miller"
+                /></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg-white-footer">
+        <a href="/index.html"
+          ><img
+            class="logo-footer"
+            src="/assets/logo_vertical.png"
+            alt="logo BiblioManiac"
+        /></a>
+        <div>
+          <h3>Menu :</h3>
+          <ul>
+            <a href="/index.html"><li>Accueil</li></a>
+            <a href="/category.html"><li>Catégories</li></a>
+          </ul>
+        </div>
+        <div>
+          <h3>Services :</h3>
+          <ul>
+            <a href="#"><li>FAQ</li></a>
+            <a href="#"><li>CGU</li></a>
+            <a href="#"><li>Mentions Légales</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <div class="social-media">
+            <h3>Suivez-nous :</h3>
+            <a href="https://facebook.com"
+              ><img
+                class="icon-rs"
+                src="/assets/icons/utils/icon-fb.svg"
+                alt="logo Facebook"
+            /></a>
+            <a href="https://instagram.com"
+              ><img
+                class="icon-rs"
+                src="/assets/icons/utils/icon-insta.svg"
+                alt="logo Instagram"
+            /></a>
+          </div>
+          <div>
+            <h3>Newsletter :</h3>
+            <div>
+              <input
+                id="newsletter"
+                type="text"
+                class="form-control form-nl"
+                placeholder="Adresse email"
+              />
+              <button class="btn-nl" id="" type="button">S'abonner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white-footer-bis">
+        <p>2024 © Bibliothèque de Lyon - Copyright</p>
+      </div>
+    </footer>
+
+    <!-- Modal de confirmation panier -->
+    <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+        <img
+          class="logo-modal"
+          src="/assets/logo.png"
+          alt="logo BiblioManiac"
+        />
+        <h2>Réservation confirmé !</h2>
+
+        <p class="modal-paragraphe mb-2">
+          Nous vous attendons le 18 octobre 2024 à la Bibliothèque de Lyon 7e.
+        </p>
+        <p class="modal-paragraphe">
+          Horaires d’ouverture : du lundi au vendredi de 10h à 19h
+        </p>
+
+        <p class="link-profil">
+          <a href="/pages/account.html">Retour au profil ></a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/modal-confirmation.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BiblioManiac - La psy</title>
+    <link href="/assets/css/powerless.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  </head>
+  <body>
+    <header>
+      <!-- NavBar Desktop -->
+      <nav class="bg-white rm-mobile">
+        <a href="/index.html"
+          ><img
+            class="logo"
+            src="/assets/logo_horizontal.png"
+            alt="logo BiblioManiac"
+        /></a>
+
+        <div class="menu-burger" id="menuBurger" onclick="toggleMenu()">
+          &#9776;
+        </div>
+
+        <div class="menu menuPC">
+          <p><a href="/index.html">Accueil</a></p>
+          <p><a href="category.html">Catégories</a></p>
+          <p><a href="#">FAQ</a></p>
+        </div>
+        <div class="right-section menuPC">
+          <a href="cart.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon_basket.svg"
+              alt="Votre panier"
+          /></a>
+          <div class="profile-menu-container">
+            <img
+              class="icon-profil-nav"
+              src="/assets/icons/utils/icon_profil.png"
+              alt="Votre profil"
+              onclick="toggleProfileMenu()"
+            />
+            <div id="profileMenu" class="profile-menu">
+              <p><a href="login.html">Se connecter</a></p>
+              <div class="separator-profil"></div>
+              <p><a href="account.html">Mon profil</a></p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Conteneur du menu burger - NavBar Tablette -->
+      <div class="menu-container" id="menuContainer">
+        <div class="menu" id="navMenu">
+          <p><a href="/index.html">Accueil</a></p>
+          <p><a href="category.html">Catégories</a></p>
+          <p><a href="#">FAQ</a></p>
+          <p><a href="cart.html">Mon panier</a></p>
+          <p><a href="account.html">Mon Profil</a></p>
+          <p><a href="login.html" class="btn-book">Se connecter</a></p>
+        </div>
+      </div>
+
+      <!-- NavBar Mobile -->
+      <nav class="navmobile">
+        <div class="icon-container">
+          <a href="/index.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-home-actif.svg"
+              alt="Navbar - Accueil"
+          /></a>
+          <a href="#"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-search.svg"
+              alt="Navbar - Recherche"
+          /></a>
+          <a href="cart.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-cart-inactif.svg"
+              alt="Navbar - Votre panier"
+          /></a>
+          <a href="login.html"
+            ><img
+              class="icon-size"
+              src="/assets/icons/utils/icon-profil-inactif.svg"
+              alt="Navbar - Votre profil"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="img-mobile-psy"></div>
+    <section class="main-container">
+      <div class="flex-desktop">
+        <img
+          src="/assets/images/couverture_la_psy.jpg"
+          alt="couverture la psy"
+          class="img-desktop"
+        />
+
+        <section class="book-details">
+          <div class="d-flex flex-end">
+            <h1>La psy</h1>
+            <img
+              id="heart-icon"
+              class="icon-size"
+              src="/assets/icons/utils/coeur-vide.svg"
+              alt="coeur vide"
+            />
+          </div>
+          <p class="author">par Freida McFadden</p>
+          <p class="grey-text">17/04/2024</p>
+
+          <div class="d-flex flex-end">
+            <div class="d-flex">
+              <p>5</p>
+              <img
+                class="icon-review"
+                src="/assets/icons/utils/icon-stars.svg"
+                alt="icone étoile"
+              />
+            </div>
+
+            <div class="d-flex buttons-desktop">
+              <a href="#" class="btn-add-list">Ajouter à ma liste</a>
+              <a href="cart.html" class="btn-book">Réserver</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <h2>Synopsis :</h2>
+          <br />
+          <p>
+            Jeunes mariés, Tricia et Ethan recherchent la maison de leurs rêves.
+            Alors qu'ils visitent un manoir isolé ayant appartenu au docteur
+            Adrienne Hale, une psychiatre renommée disparue sans laisser de
+            trace quatre ans plus tôt, une violente tempête de neige les piège
+            sur place.
+          </p>
+          <br />
+
+          <p>
+            Et la maison n’a rien d’un cocon rassurant... Il y a ces empreintes
+            de pas récentes sur le parquet, ces bruits à l’étage, comme si
+            quelqu’un vivait là. Pire encore  : Tricia découvre une pièce
+            secrète qui renferme les enregistrements audio de chaque patient du
+            docteur Hale.
+          </p>
+          <br />
+
+          <p>
+            La jeune femme les écoute les uns après les autres, tard dans la
+            nuit. La toile de mensonges ayant conduit à la disparition de la psy
+            se dévoile lentement. Mais déterrer de vilains petits secrets est un
+            jeu dangereux, et lorsque Tricia écoute le dernier enregistrement,
+            il est déjà trop tard...
+          </p>
+
+          <div class="d-flex buttons-mobile">
+            <a href="#" class="btn-add-list">Ajouter à ma liste</a>
+            <a href="cart.html" class="btn-book">Réserver</a>
+          </div>
+        </section>
+      </div>
+
+      <section class="customer-reviews">
+        <h2>Avis client :</h2>
+
+        <!--    MOBILE    -->
+        <div class="reviews-mobile">
+          <div class="review-card d-flex">
+            <img
+              class="img-profile"
+              src="/assets/icons/utils/profil1.png"
+              alt="photo de profil"
+            />
+            <div class="review-text">
+              <div class="d-flex flex-end">
+                <p>Loraine</p>
+                <div class="d-flex">
+                  <p>5</p>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-stars.svg"
+                    alt="icone étoile"
+                  />
+                </div>
+              </div>
+              <p class="comment">
+                McFadden nous offre un huis-clos en pleine tempête de neige,
+                c’est très rafraîchissant, voir un poil effrayant.
+              </p>
+            </div>
+          </div>
+          <div class="review-card d-flex">
+            <img
+              class="img-profile"
+              src="/assets/icons/utils/profil2.png"
+              alt="photo de profil"
+            />
+            <div class="review-text">
+              <div class="d-flex flex-end">
+                <p>Claire</p>
+                <div class="d-flex">
+                  <p>4</p>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-stars.svg"
+                    alt="icone étoile"
+                  />
+                </div>
+              </div>
+              <p class="comment">
+                J’ai rarement été prise comme ça dans un livre. Les
+                rebondissements arrivent au meilleur moment, donc on a qu’une
+                envie c’est de tourner les pages pour savoir la suite.
+              </p>
+            </div>
+          </div>
+          <div class="review-card d-flex">
+            <img
+              class="img-profile"
+              src="/assets/icons/utils/profil3.png"
+              alt="photo de profil"
+            />
+            <div class="review-text">
+              <div class="d-flex flex-end">
+                <p>Anthony</p>
+                <div class="d-flex">
+                  <p>5</p>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-stars.svg"
+                    alt="icone étoile"
+                  />
+                </div>
+              </div>
+              <p class="comment">
+                Excellent livre : histoire prenante. Suspense incroyable.
+                Dénouement plus qu’inattendu. J’ai adoré.
+              </p>
+            </div>
+          </div>
+          <div class="review-card d-flex">
+            <img
+              class="img-profile"
+              src="/assets/icons/utils/profil4.png"
+              alt="photo de profil"
+            />
+            <div class="review-text">
+              <div class="d-flex flex-end">
+                <p>Jade</p>
+                <div class="d-flex">
+                  <p>4</p>
+                  <img
+                    class="icon-review"
+                    src="/assets/icons/utils/icon-stars.svg"
+                    alt="icone étoile"
+                  />
+                </div>
+              </div>
+              <p class="comment">
+                Je l'ai acheté pour 10 jours de vacances. Je l'ai lu en 3 jours.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--    DESKTOP    -->
+        <ul class="carousel" role="list" aria-label="avis client">
+          <li class="item-a">
+            <div class="review-card d-flex">
+              <img
+                class="img-profile"
+                src="/assets/icons/utils/profil1.png"
+                alt="photo de profil"
+              />
+              <div class="review-text">
+                <div class="d-flex flex-end">
+                  <p>Loraine</p>
+                  <div class="d-flex">
+                    <p>5</p>
+                    <img
+                      class="icon-review"
+                      src="/assets/icons/utils/icon-stars.svg"
+                      alt="icone étoile"
+                    />
+                  </div>
+                </div>
+                <p class="comment">
+                  McFadden nous offre un huis-clos en pleine tempête de neige,
+                  c’est très rafraîchissant, voir un poil effrayant.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="item-b">
+            <div class="review-card d-flex">
+              <img
+                class="img-profile"
+                src="/assets/icons/utils/profil2.png"
+                alt="photo de profil"
+              />
+              <div class="review-text">
+                <div class="d-flex flex-end">
+                  <p>Claire</p>
+                  <div class="d-flex">
+                    <p>4</p>
+                    <img
+                      class="icon-review"
+                      src="/assets/icons/utils/icon-stars.svg"
+                      alt="icone étoile"
+                    />
+                  </div>
+                </div>
+                <p class="comment">
+                  J’ai rarement été prise comme ça dans un livre. Les
+                  rebondissements arrivent au meilleur moment, donc on a qu’une
+                  envie c’est de tourner les pages pour savoir la suite.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="item-b">
+            <div class="review-card d-flex">
+              <img
+                class="img-profile"
+                src="/assets/icons/utils/profil3.png"
+                alt="photo de profil"
+              />
+              <div class="review-text">
+                <div class="d-flex flex-end">
+                  <p>Anthony</p>
+                  <div class="d-flex">
+                    <p>5</p>
+                    <img
+                      class="icon-review"
+                      src="/assets/icons/utils/icon-stars.svg"
+                      alt="icone étoile"
+                    />
+                  </div>
+                </div>
+                <p class="comment">
+                  Excellent livre : histoire prenante. Suspense incroyable.
+                  Dénouement plus qu’inattendu. J’ai adoré.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="item-b">
+            <div class="review-card d-flex">
+              <img
+                class="img-profile"
+                src="/assets/icons/utils/profil4.png"
+                alt="photo de profil"
+              />
+              <div class="review-text">
+                <div class="d-flex flex-end">
+                  <p>Jade</p>
+                  <div class="d-flex">
+                    <p>4</p>
+                    <img
+                      class="icon-review"
+                      src="/assets/icons/utils/icon-stars.svg"
+                      alt="icone étoile"
+                    />
+                  </div>
+                </div>
+                <p class="comment">
+                  Je l'ai acheté pour 10 jours de vacances. Je l'ai lu en 3
+                  jours.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <footer>
+      <div class="bg-white-footer">
+        <a href="/index.html"
+          ><img
+            class="logo-footer"
+            src="/assets/logo_vertical.png"
+            alt="logo BiblioManiac"
+        /></a>
+        <div>
+          <h3>Menu :</h3>
+          <ul>
+            <a href="/index.html"><li>Accueil</li></a>
+            <a href="category.html"><li>Catégories</li></a>
+          </ul>
+        </div>
+        <div>
+          <h3>Services :</h3>
+          <ul>
+            <a href="#"><li>FAQ</li></a>
+            <a href="#"><li>CGU</li></a>
+            <a href="#"><li>Mentions Légales</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <div class="social-media">
+            <h3>Suivez-nous :</h3>
+            <a href="https://facebook.com"
+              ><img
+                class="icon-rs"
+                src="/assets/icons/utils/icon-fb.svg"
+                alt="logo Facebook"
+            /></a>
+            <a href="https://instagram.com"
+              ><img
+                class="icon-rs"
+                src="/assets/icons/utils/icon-insta.svg"
+                alt="logo Instagram"
+            /></a>
+          </div>
+          <div>
+            <h3>Newsletter :</h3>
+            <div>
+              <input
+                id="newsletter"
+                type="text"
+                class="form-control form-nl"
+                placeholder="Adresse email"
+              />
+              <button class="btn-nl" id="" type="button">S'abonner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white-footer-bis">
+        <p>2024 © Bibliothèque de Lyon - Copyright</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
