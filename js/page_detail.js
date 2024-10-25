@@ -3,7 +3,7 @@ import { fetchApiBookById } from "./api_book.js";
 // DOM SELECTOR
 const h1 = document.getElementById("title-details");
 
-const displayBookDetails = async () => {
+const displayBookDetails = () => {
   const paramId = new URLSearchParams(window.location.search).get("id");
   try {
     console.log(paramId);
