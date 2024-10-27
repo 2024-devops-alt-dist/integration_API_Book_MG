@@ -11,6 +11,16 @@
   --btn-width: 6rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
+#container-sugest::-webkit-scrollbar {
+  width: 11px;
+}
+#container-sugest::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-purple);
+  border-radius: 10px;
+}
+#container-sugest::-webkit-scrollbar-track {
+  background-color: var(--color-white);
+}
 
 #container-sugest {
   background-color: var(--color-white);
