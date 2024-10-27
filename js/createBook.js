@@ -1,6 +1,6 @@
 import { getBooksByCategory } from "./api_book.js";
 
-const displayBookksByCategory = async () => {
+const displayBooksByCategory = async () => {
   try {
     const books = await getBooksByCategory("thriller");
     if (!books || books.length === 0) {
@@ -113,4 +113,4 @@ const displayBookksByCategory = async () => {
     }
   } catch (error) {}
 };
-displayBookksByCategory();
+displayBooksByCategory();
